@@ -12,9 +12,10 @@
   /* Calm Professional Therapy Palette */
   /* Light, minimal design for therapy practice */
   --bg-main: #FAF9F7;
-  --bg-soft: #EEE7DF;
-  --text-primary: #1F2A26;
-  --accent: #6D846D;
+  --bg-soft: #F3EEE8;
+  --text-primary: #1A2B24;
+  --text-body: #2C3A35;
+  --accent: #4F6F5E;
   --accent-warm: #C4876B;
 
   /* HSL equivalents for new palette */

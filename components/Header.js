@@ -42,12 +42,12 @@ export default function Header({ contactPage = false }) {
   }, [lastScrollY])
 
   const headerBg = contactPage
-    ? 'rgba(220, 214, 224, 0.97)'
-    : 'hsla(30, 55.56%, 96.47%, 0.97)'
+    ? 'hsla(39, 30%, 90%, 0.97)'
+    : 'hsla(45, 25%, 98%, 0.97)'
   const menuBg = contactPage
-    ? 'rgba(220, 214, 224, 1)'
-    : 'hsla(30, 55.56%, 96.47%, 1)'
-  const textColor = 'hsla(95.29, 45.95%, 14.51%, 1)'
+    ? 'hsla(39, 30%, 90%, 1)'
+    : 'hsla(45, 25%, 98%, 1)'
+  const textColor = '#1A2B24'
 
   return (
     <>

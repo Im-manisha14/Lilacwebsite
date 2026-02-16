@@ -282,7 +282,7 @@ function HeroSection() {
 
       <style jsx>{`
         .hero-section {
-          background-color: hsla(var(--white-hsl), 1);
+          background-color: var(--bg-main);
           padding-top: 70px;
           min-height: 100vh;
         }
@@ -348,7 +348,7 @@ function HeroSection() {
           font-weight: 700;
           font-style: italic;
           line-height: 1.05;
-          color: var(--text-primary);
+          color: #1A2B24;
           text-align: center;
           margin: 0 0 24px 0;
         }
@@ -357,7 +357,7 @@ function HeroSection() {
           font-size: clamp(16px, 1.3vw, 19px);
           font-weight: 400;
           line-height: 1.6;
-          color: var(--text-primary);
+          color: #2C3A35;
           text-align: center;
           margin: 0 0 36px 0;
         }
@@ -370,17 +370,17 @@ function HeroSection() {
           font-size: 12px;
           letter-spacing: 2px;
           text-transform: uppercase;
-          color: var(--text-primary);
-          background: transparent;
+          color: var(--bg-main);
+          background-color: var(--accent);
           text-decoration: none;
-          border: 1px solid var(--text-primary);
+          border: 1px solid var(--accent);
           padding: 18px 36px;
           transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
           font-weight: 500;
         }
         .hero-button:hover {
-          background-color: var(--text-primary);
-          color: var(--bg-main);
+          background-color: var(--bg-main);
+          color: var(--accent);
         }
         .hero-button:active {
           transform: scale(0.96);
@@ -485,7 +485,7 @@ function FulfillingLifeSection() {
           font-size: clamp(16px, 1.2vw, 18px);
           font-weight: 400;
           line-height: 1.6;
-          color: #2A3430;
+          color: #2C3A35;
           margin: 0 0 16px 0;
         }
         .fulfilling-body:last-child { margin-bottom: 0; }
@@ -613,7 +613,7 @@ function SpecialtiesSection() {
         }
         .specialties-card {
           padding: 20px;
-          border: 1px solid hsla(95.29, 45.95%, 14.51%, 1);
+          border: 1px solid var(--text-primary);
           display: flex;
           flex-direction: column;
           align-items: stretch;
@@ -638,7 +638,7 @@ function SpecialtiesSection() {
           font-size: 0.9rem;
           font-weight: 400;
           line-height: 1.6;
-          color: #2A3430;
+          color: #2C3A35;
           margin: 0;
         }
         .specialties-card-media {
@@ -815,7 +815,7 @@ function NotAloneSection() {
           font-size: clamp(15px, 1.1vw, 18px);
           font-weight: 400;
           line-height: 1.6;
-          color: #2A3430;
+          color: #2C3A35;
           margin: 0;
         }
         .notalone-closing {
@@ -823,7 +823,7 @@ function NotAloneSection() {
           font-size: clamp(15px, 1.1vw, 18px);
           font-weight: 400;
           line-height: 1.7;
-          color: #2A3430;
+          color: #2C3A35;
           margin: 0;
         }
         .notalone-button-bar { border-top: 1px solid var(--text-primary); }
@@ -987,7 +987,7 @@ function About() {
           font-size: clamp(15px, 1.2vw, 18px);
           font-weight: 400;
           line-height: 1.7;
-          color: #2A3430;
+          color: #2C3A35;
           margin: 0 0 32px 0;
         }
         .about-button-wrap { display: flex; justify-content: flex-start; }
@@ -999,17 +999,17 @@ function About() {
           font-size: 12px;
           letter-spacing: 2px;
           text-transform: uppercase;
-          color: var(--text-primary);
-          background-color: transparent;
+          color: var(--bg-main);
+          background-color: var(--accent);
           text-decoration: none;
-          border: 1px solid var(--text-primary);
+          border: 1px solid var(--accent);
           padding: 16px 32px;
           transition: all 0.3s ease;
           font-weight: 500;
         }
         .about-button:hover {
           background-color: var(--text-primary);
-          color: var(--bg-soft);
+          color: var(--bg-main);
         }
       `}</style>
     </section>
@@ -1058,7 +1058,7 @@ function TestimonialsSection() {
 
       <style jsx>{`
         .testimonials-section {
-          background-color: hsla(var(--white-hsl), 1);
+          background-color: var(--bg-main);
           padding: var(--section-padding-large) var(--sectionHorizontalMargin);
         }
         .testimonials-container {
@@ -1093,12 +1093,12 @@ function TestimonialsSection() {
         .testimonial-text {
           font-size: 1.0625rem;
           line-height: 1.8;
-          color: #2A3430;
+          color: #2C3A35;
           font-style: italic;
           margin-bottom: 1.5rem;
         }
         .testimonial-author {
-          border-top: 1px solid hsla(44, 35%, 85%, 0.4);
+          border-top: 1px solid rgba(79, 111, 94, 0.15);
           padding-top: 1rem;
         }
         .author-name {
@@ -1110,7 +1110,7 @@ function TestimonialsSection() {
         }
         .author-role {
           font-size: 0.9rem;
-          color: hsla(44, 35%, 35%, 0.7);
+          color: #2C3A35;
         }
         @media (max-width: 768px) {
           .testimonials-grid {
@@ -1198,7 +1198,7 @@ function FAQSection() {
 
       <style jsx>{`
         .faq-section {
-          background-color: hsla(var(--white-hsl), 1);
+          background-color: var(--bg-main);
           padding: var(--section-padding-medium) 0;
         }
         .faq-grid {
@@ -1259,7 +1259,7 @@ function FAQSection() {
         .accordion-item { position: relative; }
         .accordion-divider {
           height: 1px;
-          background-color: hsla(44, 35%, 35%, 0.3);
+          background-color: rgba(79, 111, 94, 0.15);
         }
         .accordion-trigger {
           display: flex;
@@ -1315,7 +1315,7 @@ function FAQSection() {
           font-size: clamp(14px, 1vw, 16px);
           font-weight: 400;
           line-height: 1.7;
-          color: #2A3430;
+          color: #2C3A35;
           margin: 0;
         }
       `}</style>
@@ -1382,7 +1382,7 @@ function ProfessionalBackgroundSection() {
 
       <style jsx>{`
         .profbg-section {
-          background-color: hsla(var(--lightAccent-hsl), 1);
+          background-color: var(--bg-main);
           padding: var(--section-padding-medium) 0;
         }
         .profbg-container {
@@ -1480,7 +1480,7 @@ function ProfessionalBackgroundSection() {
           font-size: clamp(14px, 1vw, 16px);
           font-weight: 400;
           line-height: 1.7;
-          color: #2A3430;
+          color: #2C3A35;
           margin: 0;
           max-width: 300px;
           min-width: 70%;
@@ -1543,7 +1543,7 @@ function OurOfficeSection() {
         .office-description {
           font-size: 1.125rem;
           line-height: 1.8;
-          color: #2A3430;
+          color: #2C3A35;
           max-width: 800px;
           margin: 0 auto 1rem auto;
         }
@@ -1551,13 +1551,13 @@ function OurOfficeSection() {
           font-size: 1rem;
           font-weight: 500;
           font-style: italic;
-          color: hsla(44, 35%, 35%, 0.8);
+          color: #2C3A35;
           margin: 0.5rem auto 0 auto;
         }
         .office-address {
           font-size: 1.125rem;
           font-weight: 600;
-          color: hsla(44, 35%, 35%, 0.7);
+          color: #2C3A35;
           margin: 1.5rem auto 3rem auto;
         }
         .office-images {
@@ -1638,7 +1638,7 @@ function CTASection() {
           font-size: clamp(14px, 1.1vw, 17px);
           font-weight: 400;
           line-height: 1.7;
-          color: #2A3430;
+          color: #2C3A35;
           margin: 0 0 40px 0;
         }
         .cta-button-wrap { display: flex; justify-content: center; }
@@ -1778,7 +1778,7 @@ function Footer() {
           font-size: clamp(14px, 1vw, 17px);
           font-weight: 400;
           line-height: 1.7;
-          color: hsla(44, 35%, 35%, 0.7);
+          color: #2C3A35;
           margin: 0;
         }
         .footer-links-group {
@@ -1791,7 +1791,7 @@ function Footer() {
           font-size: clamp(14px, 1vw, 17px);
           font-weight: 400;
           line-height: 1.7;
-          color: hsla(44, 35%, 35%, 0.7);
+          color: #2C3A35;
           text-decoration: underline;
           text-underline-offset: 4px;
           transition: color 0.3s ease;
@@ -1810,7 +1810,7 @@ function Footer() {
           }
         }
         .footer-bottom {
-          background-color: hsla(var(--lightAccent-hsl), 1);
+          background-color: var(--bg-main);
           padding: 40px 0 50px;
         }
         .footer-legal-links {
@@ -1824,7 +1824,7 @@ function Footer() {
           font-family: 'Poppins', sans-serif;
           font-size: clamp(13px, 0.9vw, 15px);
           font-weight: 400;
-          color: hsla(44, 35%, 35%, 0.7);
+          color: #2C3A35;
           text-decoration: underline;
           text-underline-offset: 4px;
           transition: color 0.3s ease;
@@ -1834,7 +1834,7 @@ function Footer() {
           font-family: 'Poppins', sans-serif;
           font-size: clamp(13px, 0.9vw, 15px);
           font-weight: 400;
-          color: hsla(44, 35%, 35%, 0.7);
+          color: #2C3A35;
           text-align: center;
           margin: 0 0 24px 0;
         }
@@ -1849,7 +1849,7 @@ function Footer() {
           font-family: 'Poppins', sans-serif;
           font-size: clamp(13px, 0.9vw, 15px);
           font-weight: 400;
-          color: hsla(44, 35%, 35%, 0.7);
+          color: #2C3A35;
           text-align: center;
           margin: 0;
         }

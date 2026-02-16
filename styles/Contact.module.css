@@ -2,7 +2,7 @@
 
 /* ===== HERO SECTION ===== */
 .heroSection {
-  background-color: #DCD6E0;
+  background-color: #F3EEE8;
   padding: 100px 0 80px;
   padding-top: 90px;
 }
@@ -36,7 +36,7 @@
   font-size: clamp(40px, 8vw, 96px);
   font-weight: 700;
   line-height: 1.05;
-  color: #2d3319;
+  color: #1A2B24;
   margin: 0 0 32px 0;
   letter-spacing: -0.02em;
 }
@@ -75,7 +75,7 @@
   font-size: clamp(15px, 3.5vw, 17px);
   font-weight: 500;
   line-height: 1.5;
-  color: #2d3319;
+  color: #1A2B24;
   margin: 0 0 16px 0;
   max-width: 420px;
 }
@@ -140,7 +140,7 @@
   height: 140px;
   border-radius: 50%;
   overflow: hidden;
-  border: 6px solid #DCD6E0;
+  border: 6px solid #F3EEE8;
   background: #eee;
 }
 
@@ -180,11 +180,12 @@
 }
 
 .hipaaBox {
-  background-color: #18391c;
-  color: #ffffff;
+  background-color: #F3EEE8;
+  color: #1A2B24;
   padding: 6%;
   box-sizing: border-box;
   height: 100%;
+  border: 1px solid rgba(31, 42, 38, 0.12);
 }
 
 .hipaaText {
@@ -193,7 +194,7 @@
   font-weight: 400;
   line-height: 1.65;
   margin: 0;
-  color: #f5f5f5;
+  color: #1A2B24;
 }
 
 .hipaaText strong {
@@ -202,7 +203,7 @@
 
 /* ===== BOOK APPOINTMENT SECTION ===== */
 .bookSection {
-  background-color: #e8e3db;
+  background-color: #FAF9F7;
   padding: 60px 0 80px;
 }
 
@@ -237,7 +238,7 @@
   font-weight: 700;
   font-style: normal;
   line-height: 1.1;
-  color: #2d3319;
+  color: #1A2B24;
   margin: 0 0 20px 0;
 }
 
@@ -247,13 +248,13 @@
   font-weight: 400;
   font-style: normal;
   line-height: 1.6;
-  color: #2d3319;
+  color: #1A2B24;
   max-width: 700px;
   margin: 0 auto 40px;
 }
 
 .scheduleWidget {
-  background: #e8e3db;
+  background: #F3EEE8;
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
@@ -293,13 +294,13 @@
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   font-weight: 400;
-  color: #7a7a9c;
+  color: #2C3A35;
   line-height: 1.5;
   margin: 0 0 28px 0;
 }
 
 .widgetButton {
-  background-color: #000000;
+  background-color: #4F6F5E;
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
@@ -326,7 +327,7 @@
 .poweredBy {
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
-  color: #999999;
+  color: #2C3A35;
 }
 
 .acuityLogo {
@@ -343,7 +344,7 @@
 
 /* ===== OFFICE SECTION ===== */
 .officeSection {
-  background-color: #8b914d;
+  background-color: #FAF9F7;
   padding: 60px 0 80px;
 }
 
@@ -386,7 +387,7 @@
 }
 
 .officeInfo {
-  color: #ffffff;
+  color: #1A2B24;
 }
 
 .officeHeading {
@@ -404,6 +405,7 @@
   font-weight: 400;
   line-height: 1.6;
   margin: 0 0 24px 0;
+  color: #2C3A35;
 }
 
 @media (min-width: 768px) {
@@ -496,7 +498,7 @@
   font-weight: 700;
   font-style: normal;
   line-height: 1.1;
-  color: #2d3319;
+  color: #1A2B24;
   margin: 0 0 32px 0;
 }
 
@@ -606,7 +608,7 @@
   font-size: clamp(28px, 6vw, 36px);
   font-weight: 700;
   font-style: normal;
-  color: #2d3319;
+  color: #1A2B24;
   margin: 0 0 12px 0;
 }
 
@@ -622,7 +624,7 @@
   font-size: clamp(15px, 3.5vw, 17px);
   font-weight: 400;
   font-style: normal;
-  color: #2d3319;
+  color: #1A2B24;
   margin: 0 0 16px 0;
 }
 
@@ -637,7 +639,7 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 1.7;
-  color: #2d3319;
+  color: #1A2B24;
   margin: 0 0 16px 0;
 }
 
@@ -650,7 +652,7 @@
 }
 
 .footerContact a {
-  color: #2d3319;
+  color: #1A2B24;
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: opacity 0.2s ease;
@@ -665,7 +667,7 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 1.7;
-  color: #2d3319;
+  color: #1A2B24;
   margin: 0;
 }
 
@@ -686,7 +688,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   font-weight: 400;
-  color: #2d3319;
+  color: #1A2B24;
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: opacity 0.2s ease;
@@ -698,9 +700,9 @@
 
 /* ===== BOTTOM FOOTER ===== */
 .bottomFooter {
-  background-color: #e8e3db;
+  background-color: #F3EEE8;
   padding: 40px 0;
-  border-top: 1px solid #d5d0c8;
+  border-top: 1px solid rgba(26, 43, 36, 0.12);
 }
 
 .bottomFooterContainer {
@@ -741,7 +743,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: clamp(13px, 3vw, 14px);
   font-weight: 400;
-  color: #2d3319;
+  color: #1A2B24;
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: opacity 0.2s ease;
@@ -755,7 +757,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: clamp(13px, 3vw, 14px);
   font-weight: 400;
-  color: #2d3319;
+  color: #1A2B24;
   margin: 0 0 20px 0;
 }
 
@@ -766,7 +768,7 @@
 }
 
 .creditText a {
-  color: #2d3319;
+  color: #1A2B24;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -775,6 +777,6 @@
   font-family: 'Poppins', sans-serif;
   font-size: clamp(13px, 3vw, 14px);
   font-weight: 400;
-  color: #2d3319;
+  color: #1A2B24;
   margin: 0;
 }
