@@ -26,16 +26,16 @@ function HeroSection() {
   return (
     <section className={styles.heroSection}>
       <div className={styles.heroContainer}>
-        <h1 className={styles.heroHeading}>Let's Connect</h1>
+        <h1 className={styles.heroHeading}>Contact Dr. Maya Reynolds</h1>
 
         <div className={styles.heroGrid}>
           <div className={styles.heroLeft}>
             <div className={styles.heroText}>
               <p className={styles.leadText}>
-                Starting therapy is courageous.
+                Therapy is a space to feel heard and supported.
               </p>
               <p className={styles.leadText}>
-                Get in touch for questions, or to book a free 15-minute consultation.
+                Reach out with questions or to schedule a consultation. I respond within 1–2 business days.
               </p>
             </div>
 
@@ -75,26 +75,11 @@ function BookingSection() {
   return (
     <section className={styles.bookSection}>
       <div className={styles.bookContainer}>
-        <h2 className={styles.bookHeading}>Book an appointment.</h2>
+        <h2 className={styles.bookHeading}>Request an Appointment</h2>
 
         <p className={styles.bookText}>
-          Add some text here if you like, and add your scheduling widget below (you can get one by signing up for a scheduling account through Squarespace, the top-tier plan is HIPAA compliant OR you can use your client portal).
+          Please email <a href="mailto:hello@mayareynolds.com">hello@mayareynolds.com</a> or call <a href="tel:310-555-6789">(310) 555-6789</a> to request a session. I offer a free 15-minute phone consultation for new clients.
         </p>
-
-        <div className={styles.scheduleWidget}>
-          <div className={styles.widgetInner}>
-            <h3 className={styles.widgetTitle}>This page is not active</h3>
-            <p className={styles.widgetText}>
-              If you're the owner, please log into your account to start a free trial or subscribe.
-            </p>
-            <button className={styles.widgetButton}>GO TO ACCOUNT</button>
-          </div>
-
-          <div className={styles.widgetFooter}>
-            <p className={styles.poweredBy}>Powered by</p>
-            <p className={styles.acuityLogo}>acuity<span className={styles.colon}>:</span>scheduling</p>
-          </div>
-        </div>
       </div>
     </section>
   )
@@ -107,10 +92,10 @@ function OfficeSection() {
       <div className={styles.officeContainer}>
         <div className={styles.officeGrid}>
           <div className={styles.officeInfo}>
-            <h2 className={styles.officeHeading}>My Office</h2>
 
+            <h2 className={styles.officeHeading}>Office Location</h2>
             <p className={styles.officeAddress}>
-              123rd Street 45 W<br />
+              456 Ocean Avenue, Suite 200<br />
               Santa Monica, CA 90401
             </p>
 
@@ -191,17 +176,17 @@ function FooterExtended() {
         <div className={styles.footerGrid}>
           {/* Column 1 - Practice Info */}
           <div className={styles.footerColumn}>
-            <h3 className={styles.footerTitle}>Grounded • Therapy</h3>
-            <p className={styles.footerSubtitle}>Dr. Maya Reynolds, PsyD</p>
+            <h3 className={styles.footerTitle}>Dr. Maya Reynolds, PsyD</h3>
+            <p className={styles.footerSubtitle}>Licensed Clinical Psychologist</p>
             <p className={styles.footerAddress}>
-              123rd Street 45 W<br />
+              456 Ocean Avenue, Suite 200<br />
               Santa Monica, CA 90401
             </p>
             <p className={styles.footerContact}>
-              <a href="mailto:drmaya@example.com">drmaya@example.com</a>
+              <a href="mailto:hello@mayareynolds.com">hello@mayareynolds.com</a>
             </p>
             <p className={styles.footerContact}>
-              <a href="tel:+13105551234">(310) 555-1234</a>
+              <a href="tel:+13105556789">(310) 555-6789</a>
             </p>
           </div>
 
@@ -244,9 +229,8 @@ function BottomFooter() {
         <p className={styles.creditText}>
           Website Template Credits: <a href="https://gobloomcreative.com" target="_blank" rel="noopener noreferrer">Go Bloom Creative</a>
         </p>
-
         <p className={styles.copyrightText}>
-          All Rights Reserved © {new Date().getFullYear()} Dr. Maya Reynolds, PsyD
+          © {new Date().getFullYear()} Dr. Maya Reynolds. All rights reserved.
         </p>
       </div>
     </div>

@@ -79,7 +79,7 @@ function Header() {
         </button>
 
         <div className="header-title">
-          <Link href="/" style={{ fontWeight: '700' }}>Grounded • Therapy</Link>
+          <Link href="/" style={{ fontWeight: '700' }}>Steady Harbor Therapy</Link>
         </div>
 
         <nav className="header-nav-desktop">
@@ -268,13 +268,12 @@ function HeroSection() {
 
         <div className="hero-content">
           <h1 className="hero-heading">
-            Find calm in <br />
-            the chaos
+            Anxiety & Trauma Therapy in Santa Monica
           </h1>
-          <p className="hero-subtitle">Anxiety, Trauma & Burnout Therapy in Santa Monica, California</p>
+          <p className="hero-subtitle">Compassionate, evidence-based support to help you feel steady and understood.</p>
           <div className="hero-button-wrap">
             <a href="/contact" className="hero-button">
-              SCHEDULE A CONSULTATION&nbsp;&nbsp;{'\u2192'}
+              Book a Consultation&nbsp;&nbsp;{'\u2192'}
             </a>
           </div>
         </div>
@@ -524,20 +523,20 @@ function FulfillingLifeSection() {
 function SpecialtiesSection() {
   const specialties = [
     {
-      title: 'Anxiety & Panic Therapy',
-      description: "Specialized treatment for chronic worry, panic attacks, and nervous system dysregulation. Using CBT and mindfulness-based practices, we'll help you understand the emotional and physiological roots of anxiety to find lasting relief.",
+      title: 'Anxiety Therapy',
+      description: 'Gentle support to help you manage worry, overwhelm, and daily stress.',
       image: 'https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=1000&auto=format&fit=crop',
       focalPoint: '50% 50%',
     },
     {
-      title: 'Trauma & EMDR',
-      description: "Compassionate, evidence-based trauma therapy for single-incident and complex trauma. EMDR and body-oriented techniques help process difficult experiences at a pace that feels safe, with emphasis on regulation and stabilization.",
+      title: 'Trauma Recovery',
+      description: 'Safe, paced therapy for processing difficult experiences and building resilience.',
       image: 'https://tse1.mm.bing.net/th/id/OIP.Szq-EPWSG1-wf0oU406KEAHaD4?w=1200&h=628&rs=1&pid=ImgDetMain&o=7&rm=3',
       focalPoint: '53.6% 100%',
     },
     {
-      title: 'Professional Burnout & Perfectionism',
-      description: "Support for entrepreneurs, creatives, and high-achievers feeling disconnected after years of pushing through stress. Therapy becomes a space to slow down, reconnect, and develop more sustainable ways of living and working.",
+      title: 'Burnout & Stress Support',
+      description: 'Space to slow down, reconnect, and find healthier ways to cope with stress.',
       image: 'https://tse2.mm.bing.net/th/id/OIP.T5QNoDZCcQcwNy_AO1K3pgHaE7?rs=1&pid=ImgDetMain&o=7&rm=3',
       focalPoint: '50% 50%',
     },
@@ -699,7 +698,7 @@ function NotAloneSection() {
               ref={headingRef}
               className={`notalone-heading ${headingVisible ? 'appear-visible' : 'appear-hidden'}`}
             >
-              Therapy that feels <em>grounded</em> and supportive.
+              Therapy that feels <em>steady</em> and supportive.
             </h2>
 
             <p 
@@ -881,16 +880,16 @@ function About() {
         </div>
 
         <div className="about-content">
-          <h2 className="about-heading">Meet Dr. Maya Reynolds, PsyD</h2>
+          <h2 className="about-heading">About Dr. Maya Reynolds</h2>
           <p className="about-text">
-            I'm a licensed clinical psychologist based in Santa Monica, specializing in anxiety, trauma, and burnout. I work with high-achieving adults who appear "functional" but internally feel exhausted, stuck in overthinking, or emotionally on edge.
+            I help adults facing anxiety, trauma, and burnout find steadier ground. My clients often feel overwhelmed or disconnected, even when life looks fine on the outside.
           </p>
           <p className="about-text">
-            My warm, collaborative approach integrates CBT, EMDR, mindfulness, and body-oriented techniques. Trauma work is paced carefully with emphasis on safety and stabilization. I offer both in-person sessions in my Santa Monica office and secure telehealth for California residents.
+            My approach is warm, practical, and collaborative. Sessions are structured but flexible, focused on safety and real progress at your pace.
           </p>
           <div className="about-button-wrap">
             <a href="/contact" className="about-button">
-              SCHEDULE CONSULTATION&nbsp;&nbsp;{'\u2192'}
+              Book a Consultation&nbsp;&nbsp;{'\u2192'}
             </a>
           </div>
         </div>
@@ -1128,21 +1127,21 @@ function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null)
 
   const faqs = [
-    { 
-      question: 'What should I expect in our first session?', 
-      answer: 'In our first session, we\'ll get to know each other and explore what brings you to therapy. I\'ll ask about your current challenges, your goals for therapy, and a bit about your background. This is also your opportunity to ask any questions you have about the therapeutic process and decide if we\'re a good fit.' 
+    {
+      question: 'Do you offer online sessions?',
+      answer: 'Yes. I provide both in-person and secure online therapy for clients in California.'
     },
-    { 
-      question: 'Do you offer telehealth sessions?', 
-      answer: 'Yes, I offer both in-person sessions at my Santa Monica office and secure telehealth sessions for clients throughout California. Many clients prefer the flexibility of alternating between in-person and virtual sessions based on their schedule and needs.' 
+    {
+      question: 'How long is each session?',
+      answer: 'Sessions are 50 minutes. We can discuss what pace feels right for you.'
     },
-    { 
-      question: 'What is EMDR therapy and how does it help with trauma?', 
-      answer: 'EMDR (Eye Movement Desensitization and Reprocessing) is an evidence-based therapy that helps your brain process traumatic memories in a way that reduces their emotional intensity. It\'s particularly effective for trauma, anxiety, and panic, helping you move from feeling stuck in the past to feeling more present and grounded.' 
+    {
+      question: 'What issues do you specialize in?',
+      answer: 'I focus on anxiety, trauma, and burnout for adults seeking a calmer, more connected life.'
     },
-    { 
-      question: 'How often will we meet?', 
-      answer: 'Most clients benefit from weekly sessions, especially when starting therapy. As you progress and feel more stable, we can discuss spacing sessions further apart. The frequency is always flexible and based on your specific needs and goals.' 
+    {
+      question: 'Do you offer in-person therapy?',
+      answer: 'Yes. My office is in Santa Monica, and I also offer telehealth for flexibility.'
     },
   ]
 
@@ -1334,11 +1333,11 @@ function ProfessionalBackgroundSection() {
     },
     {
       title: 'Clinical Approach',
-      description: 'I integrate evidence-based therapies with a warm, grounded approach. My work is rooted in the belief that you already have the capacity for healing—therapy is about creating the right conditions for that growth. Whether we\'re using EMDR for trauma, CBT for anxiety patterns, or mindfulness for grounding, the focus is always on what works for you.',
+      description: 'I integrate evidence-based therapies with a warm, steady approach. My work is rooted in the belief that you already have the capacity for healing—therapy is about creating the right conditions for that growth. Whether we\'re using EMDR for trauma, CBT for anxiety patterns, or mindfulness for grounding, the focus is always on what works for you.',
     },
     {
       title: 'Who I Work With',
-      description: 'I specialize in working with high-achieving adults who feel stuck in patterns of anxiety, overwhelm, or burnout. My clients are often navigating the pressure to "have it all together" while struggling quietly with panic, trauma responses, or disconnection from themselves. If you\'re tired of white-knuckling through life and ready to feel more grounded, we\'ll work well together.',
+      description: 'I specialize in working with high-achieving adults who feel stuck in patterns of anxiety, overwhelm, or burnout. My clients are often navigating the pressure to "have it all together" while struggling quietly with panic, trauma responses, or disconnection from themselves. If you\'re tired of white-knuckling through life and ready to feel more steady, we\'ll work well together.',
     },
   ]
 
@@ -1601,14 +1600,11 @@ function CTASection() {
       <div className="cta-container">
         <h3 className="cta-heading">Ready to find calm?</h3>
         <p className="cta-text">
-          Taking the first step toward therapy is a brave decision. I offer a free 15-minute consultation call where we can discuss what you're looking for and see if we're a good fit.
-          <br />
-          <br />
-          I see clients in-person at my Santa Monica office and via telehealth throughout California.
+          Ready to begin? Reach out to schedule a consultation and see if therapy is the right fit for you. In-person and online sessions available.
         </p>
         <div className="cta-button-wrap">
           <a href="/contact" className="cta-button">
-            SCHEDULE A CONSULTATION&nbsp;&nbsp;{'\u2192'}
+            Contact Me&nbsp;&nbsp;{'\u2192'}
           </a>
         </div>
       </div>
@@ -1679,12 +1675,12 @@ function Footer() {
               <h3 className="footer-col-heading">Dr. Maya Reynolds, PsyD</h3>
               <div className="footer-info">
                 <p className="footer-text">
-                  123rd Street 45 W<br />
+                  456 Ocean Avenue, Suite 200<br />
                   Santa Monica, CA 90401
                 </p>
                 <div className="footer-links-group">
-                  <a href="mailto:drmaya@example.com" className="footer-link">drmaya@example.com</a>
-                  <a href="tel:310-555-1234" className="footer-link">(310) 555-1234</a>
+                  <a href="mailto:hello@mayareynolds.com" className="footer-link">hello@mayareynolds.com</a>
+                  <a href="tel:310-555-6789" className="footer-link">(310) 555-6789</a>
                 </div>
               </div>
             </div>
@@ -1728,7 +1724,7 @@ function Footer() {
           </p>
 
           <p className="footer-copyright">
-            All Rights Reserved © 2026 Grounded Therapy, PLLC.
+            © 2026 Dr. Maya Reynolds. All rights reserved.
           </p>
         </div>
       </div>

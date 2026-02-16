@@ -89,7 +89,7 @@ function BlogHero() {
           <p className="blog-hero-text">
             A collection of thoughts on anxiety, trauma, and the path to healing. 
             Here you'll find practical tools, therapy insights, and honest reflections 
-            on what it really takes to feel grounded again.
+            on what it really takes to feel steady again.
           </p>
           <p className="blog-hero-closing">Take what resonates, leave what doesn't.</p>
         </div>
@@ -443,12 +443,12 @@ function Footer() {
               <h3 className="footer-col-heading">Dr. Maya Reynolds, PsyD</h3>
               <div className="footer-info">
                 <p className="footer-text">
-                  123rd Street 45 W<br />
+                  456 Ocean Avenue, Suite 200<br />
                   Santa Monica, CA 90401
                 </p>
                 <div className="footer-links-group">
-                  <a href="mailto:drmaya@example.com" className="footer-link">drmaya@example.com</a>
-                  <a href="tel:310-555-1234" className="footer-link">(310) 555-1234</a>
+                  <a href="mailto:hello@mayareynolds.com" className="footer-link">hello@mayareynolds.com</a>
+                  <a href="tel:310-555-6789" className="footer-link">(310) 555-6789</a>
                 </div>
               </div>
             </div>
@@ -492,7 +492,7 @@ function Footer() {
           </p>
 
           <p className="footer-copyright">
-            All Rights Reserved © 2026 Grounded Therapy, PLLC.
+            © 2026 Steady Harbor Therapy. All rights reserved.
           </p>
         </div>
       </div>

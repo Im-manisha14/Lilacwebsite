@@ -10,7 +10,7 @@ export const metadata = {
     description: 'Find calm in the chaos. Evidence-based therapy for anxiety, trauma, and burnout in Santa Monica, CA.',
     type: 'website',
     locale: 'en_US',
-    siteName: 'Grounded • Therapy',
+    siteName: 'Steady Harbor Therapy',
   },
 }
 

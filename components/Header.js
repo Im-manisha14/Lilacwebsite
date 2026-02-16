@@ -110,7 +110,7 @@ export default function Header({ contactPage = false }) {
               letterSpacing: '0.5px',
             }}
           >
-            Grounded • Therapy
+            Dr. Maya Reynolds
           </Link>
 
           {/* Desktop Navigation - hidden on mobile */}
@@ -201,7 +201,7 @@ export default function Header({ contactPage = false }) {
                 letterSpacing: '0.5px',
               }}
             >
-              Grounded • Therapy
+              Dr. Maya Reynolds
             </span>
           </div>
 
