@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Poppins Font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+
+  /* Calm Professional Therapy Palette */
+  /* Light, minimal design for therapy practice */
+  --bg-main: #FAF9F7;
+  --bg-soft: #EEE7DF;
+  --text-primary: #1F2A26;
+  --accent: #6D846D;
+  --accent-warm: #C4876B;
+
+  /* HSL equivalents for new palette */
+  --bg-main-hsl: 45, 25%, 98%;
+  --bg-soft-hsl: 39, 30%, 90%;
+  --text-primary-hsl: 144, 20%, 14%;
+  --accent-hsl: 90, 12%, 47%;
+  --accent-warm-hsl: 21, 29%, 59%;
+  --darkAccent-hsl: 144, 20%, 14%;
+
+  --section-padding-medium: 6.6vmax;
+  --section-padding-large: 8vmax;
+  --sectionHorizontalMargin: 4vw;
+  --maxWidth-2: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+}
+
+h1 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+p,
+span,
+a,
+button,
+li {
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-soft);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+/* Placeholder images using subtle neutral gradients */
+.placeholder-hero {
+  background: linear-gradient(135deg, #F9F8F6 0%, #F3EEE8 30%, #F9F8F6 50%, #F3EEE8 70%, #F9F8F6 100%);
+}
+
+.placeholder-fulfilling {
+  background: linear-gradient(135deg, #F3EEE8 0%, #F9F8F6 30%, #F3EEE8 50%, #F9F8F6 70%, #F3EEE8 100%);
+}
+
+.placeholder-specialty-1 {
+  background: linear-gradient(135deg, #F9F8F6 0%, #F3EEE8 50%, #F9F8F6 100%);
+}
+
+.placeholder-specialty-2 {
+  background: linear-gradient(135deg, #F3EEE8 0%, #F9F8F6 50%, #F3EEE8 100%);
+}
+
+.placeholder-specialty-3 {
+  background: linear-gradient(135deg, #F9F8F6 0%, #F3EEE8 50%, #F9F8F6 100%);
+}
+
+.placeholder-hope {
+  background: linear-gradient(135deg, #F9F8F6 0%, #F3EEE8 30%, #F9F8F6 60%, #F3EEE8 100%);
+}
+
+.placeholder-about {
+  background: linear-gradient(135deg, #F3EEE8 0%, #F9F8F6 30%, #F3EEE8 60%, #F9F8F6 100%);
+}
+
+.placeholder-faq {
+  background: linear-gradient(135deg, #F9F8F6 0%, #F3EEE8 30%, #F9F8F6 50%, #F3EEE8 70%, #F9F8F6 100%);
+}
+
+/* ===== GLOBAL APPEAR ANIMATIONS ===== */
+.appear-hidden {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.appear-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s cubic-bezier(0.22, 0.61, 0.36, 1), transform 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
