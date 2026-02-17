@@ -97,7 +97,7 @@ function BlogHero() {
 
       <style jsx>{`
         .blog-hero-section {
-          background-color: hsl(30, 55.56%, 96.47%);
+          background-color: hsl(100, 15%, 96%);
           padding-top: 90px;
           min-height: 100vh;
         }
@@ -217,7 +217,7 @@ function BlogList({ posts }) {
 
       <style jsx>{`
         .blog-list-section {
-          background-color: hsl(30, 55.56%, 96.47%);
+          background-color: hsl(100, 15%, 96%);
           padding: 60px 0 100px;
         }
         .blog-list-container {
@@ -340,7 +340,7 @@ function SubscribeSection() {
 
       <style jsx>{`
         .subscribe-section {
-          background-color: #F3EEE8;
+          background-color: #E8EDE7;
           padding: 80px 0 96px;
         }
         .subscribe-container {

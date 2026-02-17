@@ -8,11 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'bg-main': '#F9F8F6',
-        'bg-soft': '#F3EEE8', 
-        'text-primary': '#2C3A35',
-        'accent': '#7A8E7A',
-        'accent-warm': '#C4876B',
+        'bg-main': '#F5F7F4',
+        'bg-soft': '#E8EDE7', 
+        'text-primary': '#3A4238',
+        'accent': '#8B9D83',
+        'accent-warm': '#A8B09E',
       },
       fontFamily: {
         heading: ['var(--font-heading)'],

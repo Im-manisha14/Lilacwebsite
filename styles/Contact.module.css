@@ -2,7 +2,7 @@
 
 /* ===== HERO SECTION ===== */
 .heroSection {
-  background-color: #F3EEE8;
+  background-color: #E8EDE7;
   padding: 100px 0 80px;
   padding-top: 90px;
 }
@@ -36,7 +36,7 @@
   font-size: clamp(40px, 8vw, 96px);
   font-weight: 700;
   line-height: 1.05;
-  color: #1A2B24;
+  color: #3A4238;
   margin: 0 0 32px 0;
   letter-spacing: -0.02em;
 }
@@ -75,7 +75,7 @@
   font-size: clamp(15px, 3.5vw, 17px);
   font-weight: 500;
   line-height: 1.5;
-  color: #1A2B24;
+  color: #3A4238;
   margin: 0 0 16px 0;
   max-width: 420px;
 }
@@ -140,7 +140,7 @@
   height: 140px;
   border-radius: 50%;
   overflow: hidden;
-  border: 6px solid #F3EEE8;
+  border: 6px solid #E8EDE7;
   background: #eee;
 }
 
@@ -180,8 +180,8 @@
 }
 
 .hipaaBox {
-  background-color: #F3EEE8;
-  color: #1A2B24;
+  background-color: #E8EDE7;
+  color: #3A4238;
   padding: 6%;
   box-sizing: border-box;
   height: 100%;
@@ -194,7 +194,7 @@
   font-weight: 400;
   line-height: 1.65;
   margin: 0;
-  color: #1A2B24;
+  color: #3A4238;
 }
 
 .hipaaText strong {
@@ -203,7 +203,7 @@
 
 /* ===== BOOK APPOINTMENT SECTION ===== */
 .bookSection {
-  background-color: #FAF9F7;
+  background-color: #F5F7F4;
   padding: 60px 0 80px;
 }
 
@@ -238,7 +238,7 @@
   font-weight: 700;
   font-style: normal;
   line-height: 1.1;
-  color: #1A2B24;
+  color: #3A4238;
   margin: 0 0 20px 0;
 }
 
@@ -248,13 +248,13 @@
   font-weight: 400;
   font-style: normal;
   line-height: 1.6;
-  color: #1A2B24;
+  color: #3A4238;
   max-width: 700px;
   margin: 0 auto 40px;
 }
 
 .scheduleWidget {
-  background: #F3EEE8;
+  background: #E8EDE7;
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
@@ -294,7 +294,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   font-weight: 400;
-  color: #2C3A35;
+  color: #4F5550;
   line-height: 1.5;
   margin: 0 0 28px 0;
 }
@@ -327,7 +327,7 @@
 .poweredBy {
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
-  color: #2C3A35;
+  color: #4F5550;
 }
 
 .acuityLogo {
@@ -344,7 +344,7 @@
 
 /* ===== OFFICE SECTION ===== */
 .officeSection {
-  background-color: #FAF9F7;
+  background-color: #F5F7F4;
   padding: 60px 0 80px;
 }
 
@@ -387,7 +387,7 @@
 }
 
 .officeInfo {
-  color: #1A2B24;
+  color: #3A4238;
 }
 
 .officeHeading {
@@ -405,7 +405,7 @@
   font-weight: 400;
   line-height: 1.6;
   margin: 0 0 24px 0;
-  color: #2C3A35;
+  color: #4F5550;
 }
 
 @media (min-width: 768px) {
@@ -498,7 +498,7 @@
   font-weight: 700;
   font-style: normal;
   line-height: 1.1;
-  color: #1A2B24;
+  color: #3A4238;
   margin: 0 0 32px 0;
 }
 
@@ -608,7 +608,7 @@
   font-size: clamp(28px, 6vw, 36px);
   font-weight: 700;
   font-style: normal;
-  color: #1A2B24;
+  color: #3A4238;
   margin: 0 0 12px 0;
 }
 
@@ -624,7 +624,7 @@
   font-size: clamp(15px, 3.5vw, 17px);
   font-weight: 400;
   font-style: normal;
-  color: #1A2B24;
+  color: #3A4238;
   margin: 0 0 16px 0;
 }
 
@@ -639,7 +639,7 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 1.7;
-  color: #1A2B24;
+  color: #3A4238;
   margin: 0 0 16px 0;
 }
 
@@ -652,7 +652,7 @@
 }
 
 .footerContact a {
-  color: #1A2B24;
+  color: #3A4238;
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: opacity 0.2s ease;
@@ -667,7 +667,7 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 1.7;
-  color: #1A2B24;
+  color: #3A4238;
   margin: 0;
 }
 
@@ -688,7 +688,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   font-weight: 400;
-  color: #1A2B24;
+  color: #3A4238;
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: opacity 0.2s ease;
@@ -700,7 +700,7 @@
 
 /* ===== BOTTOM FOOTER ===== */
 .bottomFooter {
-  background-color: #F3EEE8;
+  background-color: #E8EDE7;
   padding: 40px 0;
   border-top: 1px solid rgba(26, 43, 36, 0.12);
 }
@@ -743,7 +743,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: clamp(13px, 3vw, 14px);
   font-weight: 400;
-  color: #1A2B24;
+  color: #3A4238;
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: opacity 0.2s ease;
@@ -757,7 +757,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: clamp(13px, 3vw, 14px);
   font-weight: 400;
-  color: #1A2B24;
+  color: #3A4238;
   margin: 0 0 20px 0;
 }
 
@@ -768,7 +768,7 @@
 }
 
 .creditText a {
-  color: #1A2B24;
+  color: #3A4238;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -777,6 +777,8 @@
   font-family: 'Poppins', sans-serif;
   font-size: clamp(13px, 3vw, 14px);
   font-weight: 400;
-  color: #1A2B24;
+  color: #3A4238;
   margin: 0;
 }
+
+
