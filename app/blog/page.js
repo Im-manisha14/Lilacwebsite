@@ -12,7 +12,7 @@ const blogPosts = [
     title: '5 Signs Your Anxiety Needs Professional Support',
     date: 'JANUARY 28, 2026',
     slug: '/blog/signs-anxiety-needs-support',
-    image: 'https://images.unsplash.com/photo-1499209974431-9dddcece7f88?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: 'blog 1.jpg',
     excerpt: 'Not all anxiety requires therapy—but some patterns do. Learn when worry crosses the line from everyday stress to something that deserves professional attention.',
   },
   {
@@ -20,7 +20,7 @@ const blogPosts = [
     title: 'What to Expect in Your First EMDR Session',
     date: 'JANUARY 15, 2026',
     slug: '/blog/first-emdr-session',
-    image: 'https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: 'bog 2.jpg',
     excerpt: 'Curious about EMDR therapy but not sure what happens in the room? Here\'s an honest look at how this trauma therapy works and what your first session might look like.',
   },
   {
@@ -28,7 +28,7 @@ const blogPosts = [
     title: 'The Hidden Cost of High-Functioning Anxiety',
     date: 'DECEMBER 20, 2025',
     slug: '/blog/high-functioning-anxiety',
-    image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: 'blog 3.jpg',
     excerpt: 'You\'re successful, productive, and exhausted. High-functioning anxiety looks like success on the outside—but feels like chaos on the inside. Here\'s how to recognize it.',
   },
   {
@@ -36,7 +36,7 @@ const blogPosts = [
     title: 'Grounding Techniques That Actually Work for Panic Attacks',
     date: 'DECEMBER 5, 2025',
     slug: '/blog/grounding-techniques-panic',
-    image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: 'blog 4.jpg',
     excerpt: 'When panic hits, your body goes into survival mode. These evidence-based grounding techniques can help you come back to the present moment—even in the middle of a panic attack.',
   },
   {
@@ -44,7 +44,7 @@ const blogPosts = [
     title: 'Why Burnout Isn\'t Just About Working Too Much',
     date: 'NOVEMBER 18, 2025',
     slug: '/blog/burnout-deeper-causes',
-    image: 'https://images.unsplash.com/photo-1515191107209-c28698631303?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
     excerpt: 'Burnout isn\'t fixed by a vacation. It\'s about chronic disconnection from yourself—and it requires a different kind of healing. Here\'s what actually helps.',
   },
   {
@@ -52,7 +52,7 @@ const blogPosts = [
     title: 'Choosing Between In-Person and Telehealth Therapy',
     date: 'NOVEMBER 3, 2025',
     slug: '/blog/in-person-vs-telehealth',
-    image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: 'office1.jpeg',
     excerpt: 'Both therapy formats work—but they work differently. Here\'s how to decide which option is right for you, your schedule, and your healing process.',
   },
 ]
@@ -77,8 +77,8 @@ function BlogHero() {
         <div className="blog-hero-image-col">
           <div className="blog-hero-image-mask">
             <img
-              src="/office2.jpeg"
-              alt="Dr. Maya Reynolds' therapy office in Santa Monica"
+              src="therapy.jpg"
+              alt="Therapy session representing insights and resources"
               loading="eager"
             />
           </div>

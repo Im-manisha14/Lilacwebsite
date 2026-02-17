@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 import { Parallax } from 'react-scroll-parallax'
 import { useAdaptiveQuality } from '@/hooks/useAdaptiveQuality'
 import { useAppear } from '@/hooks/useAppear'
+import Header from '@/components/Header'
 
 export default function Home() {
   return (
@@ -27,228 +28,6 @@ export default function Home() {
   )
 }
 
-// Header Component
-function Header() {
-  const [mobileOpen, setMobileOpen] = useState(false)
-  const [isVisible, setIsVisible] = useState(true)
-  const [lastScrollY, setLastScrollY] = useState(0)
-  const isHighQuality = useAdaptiveQuality()
-
-  useEffect(() => {
-    if (mobileOpen) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = 'unset'
-    }
-    return () => {
-      document.body.style.overflow = 'unset'
-    }
-  }, [mobileOpen])
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY
-
-      if (currentScrollY < 10) {
-        setIsVisible(true)
-      } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        setIsVisible(false)
-      } else if (currentScrollY < lastScrollY) {
-        setIsVisible(true)
-      }
-
-      setLastScrollY(currentScrollY)
-    }
-
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [lastScrollY])
-
-  return (
-    <header className={`header ${isVisible ? 'header-visible' : 'header-hidden'}`}>
-      <div className="header-inner">
-        <button
-          className={`header-burger ${mobileOpen ? 'burger-open' : ''}`}
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label={mobileOpen ? 'Close Menu' : 'Open Menu'}
-        >
-          <div className="burger-inner">
-            <div className="top-bun"></div>
-            <div className="bottom-bun"></div>
-          </div>
-        </button>
-
-        <div className="header-title">
-          <Link href="/" style={{ fontWeight: '700' }}>Steady Harbor Therapy</Link>
-        </div>
-
-        <nav className="header-nav-desktop">
-          <Link href="/blog">Blog</Link>
-          <Link href="/contact">Contact</Link>
-        </nav>
-      </div>
-
-      {mobileOpen && (
-        <div className="header-mobile-menu">
-          <nav className="header-menu-nav-list">
-            <Link href="/blog" onClick={() => setMobileOpen(false)} className="menu-link">
-              Blog
-            </Link>
-            <Link href="/contact" onClick={() => setMobileOpen(false)} className="menu-link">
-              Contact
-            </Link>
-          </nav>
-        </div>
-      )}
-
-      <style jsx>{`
-        .header {
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          z-index: 10001;
-          background-color: ${mobileOpen ? 'transparent' : 'hsla(var(--bg-main-hsl), 0.97)'};
-          backdrop-filter: ${isHighQuality && !mobileOpen ? 'blur(10px)' : 'none'};
-          -webkit-backdrop-filter: ${isHighQuality && !mobileOpen ? 'blur(10px)' : 'none'};
-          transform: translateY(0);
-          transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1), background-color 0.3s ease;
-        }
-        .header-hidden { transform: translateY(-100%); }
-        .header-visible { transform: translateY(0); }
-        .header-inner {
-          max-width: 1500px;
-          margin: 0 auto;
-          padding: 20px 4vw;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-        }
-        .header-burger {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 8px;
-          background: none;
-          border: none;
-          cursor: pointer;
-          order: 1;
-          position: relative;
-          z-index: 10002;
-        }
-        @media (min-width: 768px) {
-          .header-burger { display: none; }
-        }
-        .header-title { 
-          order: 2;
-          position: relative;
-          z-index: 10002;
-        }
-        @media (min-width: 768px) {
-          .header-title { order: 1; }
-        }
-        .header-title :global(a) {
-          font-family: 'Poppins', sans-serif;
-          font-size: clamp(20px, 2vw, 26px);
-          font-weight: 500;
-          color: var(--text-primary);
-          text-decoration: none;
-          letter-spacing: 0.5px;
-        }
-        .header-nav-desktop {
-          display: none;
-          align-items: center;
-          gap: 32px;
-          order: 3;
-        }
-        @media (min-width: 768px) {
-          .header-nav-desktop {
-            display: flex;
-            order: 2;
-          }
-        }
-        .header-nav-desktop :global(a) {
-          font-family: 'Poppins', sans-serif;
-          font-size: 14px;
-          font-weight: 400;
-          color: var(--text-primary);
-          text-decoration: none;
-          letter-spacing: 0.5px;
-          transition: opacity 0.3s ease;
-        }
-        .header-nav-desktop :global(a:hover) { opacity: 0.6; }
-        .burger-inner {
-          display: flex;
-          flex-direction: column;
-          gap: 6px;
-          width: 24px;
-          transition: all 0.3s ease;
-        }
-        .burger-open .burger-inner {
-          gap: 0;
-        }
-        .top-bun, .bottom-bun {
-          width: 100%;
-          height: 2px;
-          background-color: var(--text-primary);
-          transition: all 0.3s ease;
-        }
-        .burger-open .top-bun {
-          transform: rotate(45deg) translateY(0.5px);
-        }
-        .burger-open .bottom-bun {
-          transform: rotate(-45deg) translateY(-0.5px);
-        }
-        .header-mobile-menu {
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          width: 100vw;
-          height: 100vh;
-          background-color: var(--bg-soft);
-          z-index: 10000;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 80px 4vw 40px;
-          overflow: hidden;
-          animation: fadeIn 0.3s ease-in-out;
-        }
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-          }
-          to {
-            opacity: 1;
-          }
-        }
-        @media (min-width: 768px) {
-          .header-mobile-menu { display: none; }
-        }
-        .header-menu-nav-list {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          gap: 40px;
-          width: 100%;
-        }
-        .header-menu-nav-list :global(.menu-link) {
-          font-family: 'Poppins', sans-serif;
-          font-size: clamp(32px, 8vw, 48px);
-          font-weight: 400;
-          color: var(--text-primary);
-          text-decoration: none;
-          transition: opacity 0.3s ease;
-        }
-        .header-menu-nav-list :global(.menu-link:hover) { opacity: 0.6; }
-      `}</style>
-    </header>
-  )
-}
-
 // Hero Section Component
 function HeroSection() {
   return (
@@ -258,8 +37,8 @@ function HeroSection() {
           <div className="hero-image-mask">
             <Parallax speed={-8} className="parallax-container">
               <img
-                src="https://cdn.pixabay.com/photo/2016/11/18/14/08/jetty-1834801_1280.jpg"
-                alt="Peaceful jetty over calm water"
+                src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6"
+                alt="Calm therapy office interior with soft lighting"
                 loading="eager"
               />
             </Parallax>
@@ -397,8 +176,8 @@ function FulfillingLifeSection() {
       <div className="fulfilling-grid">
         <div className="fulfilling-image-block">
           <img
-            src="/office2.jpeg"
-            alt="Therapy office environment"
+                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7"
+            alt="Peaceful therapist office with natural light"
             style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 50%', display: 'block' }}
             loading="lazy"
           />
@@ -525,19 +304,19 @@ function SpecialtiesSection() {
     {
       title: 'Anxiety Therapy',
       description: 'Gentle support to help you manage worry, overwhelm, and daily stress.',
-      image: 'https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=1000&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2',
       focalPoint: '50% 50%',
     },
     {
       title: 'Trauma Recovery',
       description: 'Safe, paced therapy for processing difficult experiences and building resilience.',
-      image: 'https://tse1.mm.bing.net/th/id/OIP.Szq-EPWSG1-wf0oU406KEAHaD4?w=1200&h=628&rs=1&pid=ImgDetMain&o=7&rm=3',
-      focalPoint: '53.6% 100%',
+      image: 'therapy.jpg',
+      focalPoint: '50% 50%',
     },
     {
       title: 'Burnout & Stress Support',
       description: 'Space to slow down, reconnect, and find healthier ways to cope with stress.',
-      image: 'https://tse2.mm.bing.net/th/id/OIP.T5QNoDZCcQcwNy_AO1K3pgHaE7?rs=1&pid=ImgDetMain&o=7&rm=3',
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4',
       focalPoint: '50% 50%',
     },
   ]
@@ -547,27 +326,21 @@ function SpecialtiesSection() {
       <div className="specialties-title">
         <p>How I Can Help</p>
       </div>
-
       <ul className="specialties-grid">
-        {specialties.map((item, index) => (
-          <li key={index} className="specialties-card">
+        {specialties.map((item, idx) => (
+          <li className="specialties-card" key={item.title}>
             <div className="specialties-card-content">
-              <div className="specialties-card-text">
-                <h2 className="specialties-card-title">{item.title}</h2>
-                <div className="specialties-card-description">
-                  <p>{item.description}</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="specialties-card-media">
-              <div className="specialties-card-media-inner">
+              <div className="specialties-card-image" style={{ width: '100%', height: '180px', overflow: 'hidden', marginBottom: '18px' }}>
                 <img
                   src={item.image}
                   alt={item.title}
-                  style={{ display: 'block', objectPosition: item.focalPoint }}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: item.focalPoint, display: 'block' }}
                   loading="lazy"
                 />
+              </div>
+              <div className="specialties-card-text">
+                <h3 className="specialties-card-title">{item.title}</h3>
+                <p className="specialties-card-description">{item.description}</p>
               </div>
             </div>
           </li>
@@ -686,7 +459,7 @@ function NotAloneSection() {
       <div className="notalone-columns">
         <div className="notalone-image">
           <img
-            src="/office1.jpeg"
+                src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6"
             alt="Welcoming therapy space"
             loading="lazy"
           />
@@ -865,14 +638,14 @@ function About() {
         <div className="about-image-col">
           <div className="arch-image-wrap">
             <img
-              src="/dr-maya-reynolds.png"
+                src="dr-maya-reynolds.png"
               alt="Dr. Maya Reynolds, Licensed Clinical Psychologist"
               loading="lazy"
             />
           </div>
           <div className="circle-image-wrap">
             <img
-              src="/office1.jpeg"
+                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7"
               alt="Calm therapy environment"
               loading="lazy"
             />
@@ -1155,8 +928,8 @@ function FAQSection() {
         <div className="faq-image-col">
           <div className="faq-image-mask">
             <img
-              src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Amazing-nature-scenery-wallpaper-3840x2160.jpg"
-              alt="Peaceful natural scenery"
+                src="office2.jpeg"
+              alt="Peaceful therapy office environment"
               loading="lazy"
             />
           </div>

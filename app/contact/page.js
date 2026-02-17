@@ -42,14 +42,14 @@ function HeroSection() {
             <div className={styles.imagesContainer}>
               <div className={styles.archImage}>
                 <img
-                  src="/dr-maya-reynolds.png"
+                  src="dr-maya-reynolds.png"
                   alt="Dr. Maya Reynolds"
                   loading="eager"
                 />
               </div>
               <div className={styles.circleImage}>
                 <img
-                  src="/office1.jpeg"
+                  src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6"
                   alt="Therapy flowers"
                   loading="eager"
                 />
@@ -133,32 +133,32 @@ function SocialSection() {
         <div className={styles.socialGrid}>
           <a href="#" className={styles.socialImageLink}>
             <img
-              src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800&auto=format&fit=crop"
-              alt="Calm ocean waves"
+                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7"
+              alt="Soft sunlight through curtains"
               className={styles.socialImage}
             />
           </a>
 
           <a href="#" className={styles.socialImageLink}>
             <img
-              src="https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?w=800&auto=format&fit=crop"
-              alt="Coffee and journal"
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2"
+              alt="Minimalist cozy chair"
               className={styles.socialImage}
             />
           </a>
 
           <a href="#" className={styles.socialImageLink}>
             <img
-              src="https://putthekettleon.ca/wp-content/uploads/2023/08/Mindfulness-questions-768x480.jpg"
-              alt="Mindful reflection"
+                src="therapy.jpg"
+              alt="Gentle hands holding mug"
               className={styles.socialImage}
             />
           </a>
 
           <a href="#" className={styles.socialImageLink}>
             <img
-              src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&auto=format&fit=crop"
-              alt="Calming nature scene"
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4"
+              alt="Calm neutral-toned plant"
               className={styles.socialImage}
             />
           </a>
